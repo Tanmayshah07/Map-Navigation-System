@@ -13,6 +13,3 @@
 		* This is useful because the program will always search for a route from the segments which have the highest likelihood of finding the shortest route to the destination
 		* When the segment where the destination resides is discovered, we know this is the shortest path because the segments that is checked is the one whose total distance traveled plus the distance to the destination is least, and if it is connected the destination segment, then it will have the shortest distance traveled, meaning it is the shortest path
 
-
-
-** This is a very crude explanation, so if confused, check out this link on [Diijkstra's Shortest Path Algorithm](https://en.wikipedia.org/wiki/Dijkstra%27s_algorithm), as this program implements a variation of this algorithm
