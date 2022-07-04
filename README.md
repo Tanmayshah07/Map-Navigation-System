@@ -1,51 +1,5 @@
 # Navigator
 
-#### Build
-* Download repository
-* Available commands in directory:
-```bash 
-make 					// compile and link program
-make clean-objects			// remove object files
-make clean 				// remove object files and executable
-```
-
-
----
-
-
-#### Run
-* After building program:
-```bash
-./navigation [mapfile] "start location" "end location" [-raw]
-```
-- mapfile:
-	* file containing map data that the program will use
-	* mapdata.txt is the file included in this repo used for this argument, it holds data for the Westwood, CA area
-	* file format should match the following
-		* Name of street, followed by '\n'
-		* Coordinates (ex: 34.0550535, -118.4124960 34.0549537,-118.4123981), followed by '\n'
-		* Number of  locations at these coordinates, followed by '\n'
-		* Name of each location, with '\n' after each
-
-
-
-- start/end location
-	* name of start and end points selected from validlocs.txt file
-	* file format should match the following
-    	* Name of location, followed by " | " and the name of the street it is on
- 	* provided validlocs file includes locations found in the Westwood, CA area
-
-
-
-- raw
-	* this optional flag will show all coordinates and segments of the trip, but with a less clean output 	
-
-
-
----
-
-
-
 #### About
 ###### This system implements a shortest path algorithm that ensures the route returned is of the shortest distance possible
 
